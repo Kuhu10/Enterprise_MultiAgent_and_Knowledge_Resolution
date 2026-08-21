@@ -1,0 +1,12 @@
+langgraph
+langchain
+chromadb
+sentence-transformers
+fastapi
+streamlit
+python-dotenv
+anthropic
+openai
+pandas
+requests
+urllib3
