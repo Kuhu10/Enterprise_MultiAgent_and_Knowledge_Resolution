@@ -1,0 +1,5 @@
+timestamp,incident_id,incident_type,root_cause,recommended_action,target_system,confidence_score,execution_status,verification_status,final_status
+2026-08-22 21:05:17,INC-UI-001,Disk Related Incident,Disk capacity or storage-related failure pattern detected,check_disk_space,hdfs-node,1.0,SUCCESS,PASS,RESOLVED
+2026-08-22 21:05:32,INC-UI-001,Disk Related Incident,Disk capacity or storage-related failure pattern detected,check_disk_space,hdfs-node,0.6,SUCCESS,PASS,RESOLVED
+2026-08-22 21:08:12,INC-UI-001,Disk Related Incident,Disk capacity or storage-related failure pattern detected,check_disk_space,hdfs-node,1.0,SUCCESS,PASS,RESOLVED
+2026-08-22 21:08:22,INC-UI-001,Disk Related Incident,Disk capacity or storage-related failure pattern detected,check_disk_space,hdfs-node,0.6,SUCCESS,PASS,RESOLVED

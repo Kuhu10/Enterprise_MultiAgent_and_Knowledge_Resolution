@@ -1,0 +1,81 @@
+chunk_id,start_line,end_line,incident_id,incident_type,root_cause,confidence_score,recommended_action,target_system,execution_status,verification_status,final_status
+1,1,25,INC-CHUNK-001,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+2,26,50,INC-CHUNK-002,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+3,51,75,INC-CHUNK-003,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+4,76,100,INC-CHUNK-004,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.9,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+5,101,125,INC-CHUNK-005,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.67,run_health_check,hdfs-cluster,SUCCESS,FAIL,UNRESOLVED
+6,126,150,INC-CHUNK-006,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+7,151,175,INC-CHUNK-007,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+8,176,200,INC-CHUNK-008,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+9,201,225,INC-CHUNK-009,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+10,226,250,INC-CHUNK-010,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,PENDING,PENDING,PENDING
+11,251,275,INC-CHUNK-011,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+12,276,300,INC-CHUNK-012,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.71,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+13,301,325,INC-CHUNK-013,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.75,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+14,326,350,INC-CHUNK-014,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.88,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+15,351,375,INC-CHUNK-015,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.71,run_health_check,hdfs-cluster,SUCCESS,FAIL,UNRESOLVED
+16,376,400,INC-CHUNK-016,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",1.0,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+17,401,425,INC-CHUNK-017,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",1.0,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+18,426,450,INC-CHUNK-018,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+19,451,475,INC-CHUNK-019,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",1.0,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+20,476,500,INC-CHUNK-020,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,PENDING,PENDING,PENDING
+21,501,525,INC-CHUNK-021,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+22,526,550,INC-CHUNK-022,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+23,551,575,INC-CHUNK-023,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+24,576,600,INC-CHUNK-024,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+25,601,625,INC-CHUNK-025,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,FAIL,UNRESOLVED
+26,626,650,INC-CHUNK-026,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+27,651,675,INC-CHUNK-027,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+28,676,700,INC-CHUNK-028,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.89,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+29,701,725,INC-CHUNK-029,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.5,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+30,726,750,INC-CHUNK-030,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,PENDING,PENDING,PENDING
+31,751,775,INC-CHUNK-031,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+32,776,800,INC-CHUNK-032,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.82,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+33,801,825,INC-CHUNK-033,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.6,run_health_check,hdfs-cluster,SUCCESS,PASS,RESOLVED
+34,826,850,INC-CHUNK-034,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+35,851,875,INC-CHUNK-035,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,FAIL,UNRESOLVED
+36,876,900,INC-CHUNK-036,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+37,901,925,INC-CHUNK-037,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+38,926,950,INC-CHUNK-038,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+39,951,975,INC-CHUNK-039,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+40,976,1000,INC-CHUNK-040,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,PENDING,PENDING,PENDING
+41,1001,1025,INC-CHUNK-041,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+42,1026,1050,INC-CHUNK-042,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+43,1051,1075,INC-CHUNK-043,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+44,1076,1100,INC-CHUNK-044,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+45,1101,1125,INC-CHUNK-045,General HDFS Incident,"General error, failure, exception, block, or replication issue detected",0.78,run_health_check,hdfs-cluster,SUCCESS,FAIL,UNRESOLVED
+46,1126,1150,INC-CHUNK-046,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.5,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+47,1151,1175,INC-CHUNK-047,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+48,1176,1200,INC-CHUNK-048,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+49,1201,1225,INC-CHUNK-049,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+50,1226,1250,INC-CHUNK-050,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,PENDING,PENDING,PENDING
+51,1251,1275,INC-CHUNK-051,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+52,1276,1300,INC-CHUNK-052,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+53,1301,1325,INC-CHUNK-053,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+54,1326,1350,INC-CHUNK-054,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+55,1351,1375,INC-CHUNK-055,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,FAIL,UNRESOLVED
+56,1376,1400,INC-CHUNK-056,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+57,1401,1425,INC-CHUNK-057,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+58,1426,1450,INC-CHUNK-058,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+59,1451,1475,INC-CHUNK-059,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+60,1476,1500,INC-CHUNK-060,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,PENDING,PENDING,PENDING
+61,1501,1525,INC-CHUNK-061,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+62,1526,1550,INC-CHUNK-062,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+63,1551,1575,INC-CHUNK-063,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+64,1576,1600,INC-CHUNK-064,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+65,1601,1625,INC-CHUNK-065,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,FAIL,UNRESOLVED
+66,1626,1650,INC-CHUNK-066,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+67,1651,1675,INC-CHUNK-067,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+68,1676,1700,INC-CHUNK-068,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+69,1701,1725,INC-CHUNK-069,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+70,1726,1750,INC-CHUNK-070,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,PENDING,PENDING,PENDING
+71,1751,1775,INC-CHUNK-071,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+72,1776,1800,INC-CHUNK-072,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+73,1801,1825,INC-CHUNK-073,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+74,1826,1850,INC-CHUNK-074,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+75,1851,1875,INC-CHUNK-075,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,FAIL,UNRESOLVED
+76,1876,1900,INC-CHUNK-076,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+77,1901,1925,INC-CHUNK-077,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+78,1926,1950,INC-CHUNK-078,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+79,1951,1975,INC-CHUNK-079,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,SUCCESS,PASS,RESOLVED
+80,1976,2000,INC-CHUNK-080,HDFS DataNode Incident,"DataNode communication, heartbeat, connection, or timeout failure detected",0.67,restart_service,hdfs-datanode,PENDING,PENDING,PENDING
