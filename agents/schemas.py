@@ -58,3 +58,51 @@ class ComprehensiveDiagnosticResult(BaseModel):
     impact_analysis: ImpactAnalysis
     diagnostic_conclusion: DiagnosticConclusion
 
+class IncidentContext(BaseModel):
+    incident_id: str = Field(description="The unique identifier for the incident.")
+    severity: str = Field(description="The severity level of the incident.")
+    affected_service: str = Field(description="The primary service affected.")
+
+class DiagnosticContext(BaseModel):
+    root_cause: str = Field(description="The diagnosed root cause.")
+    diagnostic_confidence: float = Field(description="Confidence score of the diagnosis.")
+    evidence_summary: str = Field(description="Summary of the evidence supporting the diagnosis.")
+
+class RecommendedAction(BaseModel):
+    action: str = Field(description="The recommended remediation action.")
+    rationale: str = Field(description="Why this action is recommended.")
+    expected_outcome: str = Field(description="What this action will achieve.")
+    confidence: float = Field(description="Confidence score for this recommendation.")
+    risk_level: str = Field(description="Risk level (e.g., Low, Medium, High, Critical).")
+    reversibility: str = Field(description="Can it be rolled back?")
+    estimated_impact: str = Field(description="Estimated impact of executing this action.")
+
+class SupportingKnowledge(BaseModel):
+    sop_reference: Optional[str] = Field(description="Reference to an SOP or runbook.")
+    historical_incident_reference: Optional[str] = Field(description="Reference to a past incident.")
+    enterprise_documentation: Optional[str] = Field(description="Reference to other enterprise docs.")
+
+class AlternativeAction(BaseModel):
+    action: str = Field(description="The alternative remediation action.")
+    rationale: str = Field(description="Why this is a valid alternative.")
+    confidence: float = Field(description="Confidence score for this alternative.")
+    risk_level: str = Field(description="Risk level of this alternative.")
+    why_it_is_not_the_primary_choice: str = Field(description="Reason for not selecting this as the primary recommendation.")
+
+class ApprovalRequirement(BaseModel):
+    requires_human_approval: bool = Field(description="Whether human approval is required. MUST be true for high-risk or destructive actions.")
+    approval_reason: str = Field(description="Reason why approval is or isn't required.")
+
+class ExecutionHandoff(BaseModel):
+    execution_type: str = Field(description="e.g., 'API_CALL', 'SSH_COMMAND', 'MANUAL_INTERVENTION'")
+    commands_or_scripts: List[str] = Field(description="The exact commands, API endpoints, or scripts to execute.")
+    target_environment: str = Field(description="The environment where the execution should happen.")
+
+class FinalRecommendationOutput(BaseModel):
+    incident: IncidentContext
+    diagnosis: DiagnosticContext
+    recommended_action: RecommendedAction
+    supporting_knowledge: SupportingKnowledge
+    alternative_actions: List[AlternativeAction]
+    approval_requirement: ApprovalRequirement
+    execution_handoff: ExecutionHandoff
