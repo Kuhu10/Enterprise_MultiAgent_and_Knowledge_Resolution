@@ -1,12 +1,6 @@
-langgraph
-langchain
-chromadb
-sentence-transformers
 fastapi
-streamlit
+uvicorn
+python-multipart
 python-dotenv
-anthropic
-openai
-pandas
 requests
 urllib3
