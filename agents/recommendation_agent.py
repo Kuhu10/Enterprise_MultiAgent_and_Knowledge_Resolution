@@ -1,5 +1,5 @@
 import json
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, Any
 from langchain_core.language_models.chat_models import BaseChatModel
 from langgraph.prebuilt import create_react_agent
 
@@ -29,9 +29,9 @@ RULES & GUARDRAILS:
 6. Once formulated, you MUST call the `submit_recommendation` tool to output the structured payload.
 """
         
-        self.agent = create_react_agent(self.llm, tools=self.tools, state_modifier=system_message)
+        self.agent = create_react_agent(self.llm, tools=self.tools, prompt=system_message)
 
-    def recommend(self, incident: Incident, diagnostic_result: ComprehensiveDiagnosticResult, retrieved_knowledge: List[Dict[str, str]]) -> str:
+    def recommend(self, incident: Incident, diagnostic_result: Any, retrieved_knowledge: List[Dict[str, str]]) -> str:
         """Determines the safest remediation strategy."""
         
         prompt = f"""Please recommend a remediation strategy for the following incident:
@@ -41,7 +41,7 @@ Severity: {incident.severity}
 Affected Service: {incident.affected_service}
 
 Diagnostic Root Cause Analysis:
-{diagnostic_result.root_cause_analysis.primary_root_cause}
+{diagnostic_result}
 
 Retrieved Knowledge (SOPs, Runbooks, History):
 {json.dumps(retrieved_knowledge, indent=2)}

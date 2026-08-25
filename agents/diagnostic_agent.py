@@ -37,7 +37,7 @@ HANDLING EDGE CASES:
 - Cascading Failures: Trace the dependency chain back to the origin. Document intermediate failures in `contributing_factors` and list all upstream/downstream impacted services in `ImpactAnalysis.affected_services`.
 """
         
-        self.agent = create_react_agent(self.llm, tools=self.tools, state_modifier=system_message)
+        self.agent = create_react_agent(self.llm, tools=self.tools, prompt=system_message)
 
     def analyze(self, incident: Incident) -> str:
         """Analyzes an incident using a tool-based reasoning loop."""
