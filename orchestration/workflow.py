@@ -1,10 +1,11 @@
 import logging
 from typing import TypedDict, Optional, List, Dict, Any
 from langgraph.graph import StateGraph, END
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 from .state import IncidentState
 from agents.diagnostic_agent import DiagnosticAgent
+from agents.retrieval_agent import RetrievalAgent
 from agents.recommendation_agent import RecommendationAgent
 
 # Configure logging
@@ -12,8 +13,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger("Orchestrator")
 
 # Initialize models
-llm = ChatOpenAI(model="gpt-4o")
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 diagnostic_agent = DiagnosticAgent(llm)
+retrieval_agent = RetrievalAgent()
 recommendation_agent = RecommendationAgent(llm)
 
 def monitoring_node(state: IncidentState):
@@ -49,7 +51,6 @@ def diagnostic_node(state: IncidentState):
 
 def retrieval_node(state: IncidentState):
     logger.info("--- RETRIEVAL NODE ---")
-    # ONLY retrieve knowledge boundary
     diagnostic_result = state.get("diagnostic_result")
     if not diagnostic_result:
         logger.error("No diagnostic result to use for retrieval.")
@@ -58,17 +59,16 @@ def retrieval_node(state: IncidentState):
         state["errors"].append("Missing diagnostic result")
         return state
         
-    # Simulate retrieving SOPs based on diagnosis
-    retrieved_knowledge = [
-        {
-            "id": "SOP-849",
-            "title": "Handling general issues",
-            "content": "Step 1: Check metrics. Step 2: Restart service safely. Step 3: Monitor.",
-            "category": "SOP"
-        }
-    ]
-    state["retrieved_knowledge"] = retrieved_knowledge
-    logger.info(f"Retrieved Knowledge: {retrieved_knowledge}")
+    try:
+        retrieved_knowledge = retrieval_agent.retrieve(diagnostic_result)
+        state["retrieved_knowledge"] = retrieved_knowledge
+        logger.info(f"Retrieved {len(retrieved_knowledge)} knowledge items.")
+    except Exception as e:
+        logger.error(f"Retrieval Agent failed: {e}")
+        if "errors" not in state or state["errors"] is None:
+            state["errors"] = []
+        state["errors"].append(str(e))
+        
     return state
 
 def recommendation_node(state: IncidentState):
