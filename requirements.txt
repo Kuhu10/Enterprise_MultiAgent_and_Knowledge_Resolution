@@ -10,3 +10,5 @@ openai
 pandas
 requests
 urllib3
+langchain-chroma
+langchain-google-genai
